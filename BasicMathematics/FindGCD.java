@@ -7,7 +7,8 @@ public class FindGCD {
 
         while(result > 0){
           if(a%result == 0 && b%result == 0){
-              return result;
+              break;
+//              return result;
           }
           result --;
         }
@@ -23,8 +24,8 @@ public class FindGCD {
     }
 
     public static void main(String[] args) {
-        int a=32;
-        int b=46;
-        System.out.println("GCD of "+ a + " and "+b+" is: " + find_GCD_optimized_approach(a,b));
+        int a=12;
+        int b=9;
+        System.out.println("GCD of "+ a + " and "+b+" is: " + find_GCD_basic_approach(a,b));
     }
 }
